@@ -1,0 +1,459 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage[margin=2cm]{geometry}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage[box]{automultiplechoice}
+
+\lstset{
+  basicstyle=\small\ttfamily,
+  breaklines=true
+}
+
+\begin{document}
+
+{
+\def\AMCbeginQuestion#1#2{\par\noindent{\bf (POSCOMP 2004 - Questão 24)}}
+\begin{question}{q2004-24} Considere as seguintes estruturas de dados: (I) Tabela hash (II) Fila (III) Árvore de pesquisa (IV) Pilha. Qual ou quais das estruturas acima requer mais do que tempo médio constante para inserção de um elemento?
+\begin{choices}
+\wrongchoice{retirar a página que acabou de ser referenciada}
+\wrongchoice{retirar a página que será necessária no futuro mais distante}
+\wrongchoice{retirar a página que está há mais tempo na memória}
+\wrongchoice{retirar a página que foi referenciada menos vezes}
+\wrongchoice{retirar a página que está há mais tempo sem ser utilizada}
+\end{choices}
+\end{question}
+}
+
+{
+\def\AMCbeginQuestion#1#2{\par\noindent{\bf (POSCOMP 2004 - Questão 38)}}
+\begin{question}{q2004-38} Para um certo problema foram apresentados dois algoritmos de divisão e conquista, A e B, cujos tempos de execução são descritos, respectivamente, por $T_A(n) = 7 T_A(n/2) + n^3$ e $T_B(n) = \alpha T_B(n/4) + n^2$. Qual é o maior valor inteiro para $\alpha$, tal que o tempo de execução de B seja assintoticamente menor que o de A, isto é, $T_B(n) \in o(T_A(n))$?
+\begin{choices}
+\wrongchoice{Somente as afirmativas I, II e III são verdadeiras.}
+\wrongchoice{Somente as afirmativas I, II, III e VI são verdadeiras.}
+\wrongchoice{Somente as afirmativas I, III, IV e VI são verdadeiras.}
+\wrongchoice{Somente as afirmativas I, III, IV e V são verdadeiras.}
+\wrongchoice{Todas as afirmativas são verdadeiras.}
+\end{choices}
+\end{question}
+}
+
+{
+\def\AMCbeginQuestion#1#2{\par\noindent{\bf (POSCOMP 2005 - Questão 32)}}
+\begin{question}{q2005-32} Considere o algoritmo \texttt{máximo(v, i, f)} que devolve o índice de um elemento máximo de $\{v[i], \dots, v[f]\}$:
+\begin{lstlisting}
+maximo(v, i, f)
+  se i = f, devolva i
+  p <- maximo(v, i, \lfloor(i + f)/2\rfloor)
+  q <- maximo(v, \lfloor(i + f)/2\rfloor + 1, f)
+  se v[p] >= v[q], devolva p
+  devolva q
+\end{lstlisting}
+Considerando $n = f - i + 1$, o número de comparações entre elementos de $v$ numa execução de \texttt{máximo(v, i, f)} é:
+\begin{choices}
+\wrongchoice{Somente (II).}
+\wrongchoice{Somente (I) e (II).}
+\wrongchoice{Somente (I), (II) e (III).}
+\wrongchoice{Somente (II), (III) e (IV).}
+\wrongchoice{Somente (I), (III) e (IV).}
+\end{choices}
+\end{question}
+}
+
+{
+\def\AMCbeginQuestion#1#2{\par\noindent{\bf (POSCOMP 2006 - Questão 33)}}
+\begin{question}{q2006-33} Como o procedimento abaixo deve ser completado para que ele seja capaz de ordenar um vetor de $n$ elementos ($n \le 100$) em ordem crescente:
+\begin{lstlisting}
+type VetorType = array[0..100] of integer;
+procedure Ordena(n: integer; var a: VetorType);
+var i,j,x: integer;
+begin
+  for i := 2 to n do begin
+    x := a[i];
+    j := i - 1;
+    ___________________;
+    While x < a[j] do begin
+      a[i+j] := a[j];
+      __________________;
+    end;
+    ____________________;
+  end;
+end;
+\end{lstlisting}
+\begin{choices}
+\wrongchoice{T1 possui altura mínima dentre todas as árvores binárias com 9 nós.}
+\wrongchoice{T1 é uma árvore AVL.}
+\correctchoice{T1 é uma árvore rubro-negra.}
+\wrongchoice{T2 possui altura mínima dentre todas as árvores binárias com 11 nós.}
+\wrongchoice{T2 é uma árvore rubro-negra.}
+\end{choices}
+\end{question}
+}
+
+{
+\def\AMCbeginQuestion#1#2{\par\noindent{\bf (POSCOMP 2006 - Questão 38)}}
+\begin{question}{q2006-38} A complexidade desse Algoritmo da questão anterior é:
+\begin{choices}
+\wrongchoice{Ambas permitem taxas de transmissão diferentes para upstream e downstream}
+\wrongchoice{Os canais de upstream e downstream da tecnologia ADSL não necessitam de contenção de acesso}
+\correctchoice{Os canais de upstream e downstream da tecnologia Cable Modem necessitam de}
+\wrongchoice{ADSL utiliza par trançado dedicado para cada residência}
+\wrongchoice{Cable Modem utiliza cabo compartilhado para diversas residências}
+\end{choices}
+\end{question}
+}
+
+{
+\def\AMCbeginQuestion#1#2{\par\noindent{\bf (POSCOMP 2016 - Questão 21)}}
+\begin{question}{q2016-21} Um algoritmo tem complexidade $O(3m^3 + 2mn^2 + n^2 + 10m + m^2)$. Uma maneira simplificada de representar a complexidade desse algoritmo é:
+\begin{choices}
+\correctchoice{$O(m^3 + mn^2)$.}
+\wrongchoice{$O(m^3)$.}
+\wrongchoice{$O(m^2)$.}
+\wrongchoice{$O(mn^2)$.}
+\wrongchoice{$O(m^3 + n^2)$.}
+\end{choices}
+\end{question}
+}
+
+{
+\def\AMCbeginQuestion#1#2{\par\noindent{\bf (POSCOMP 2016 - Questão 24)}}
+\begin{question}{q2016-24} A operação de destruição de uma árvore requer um tipo de percurso em que a liberação de um nó é realizada apenas após todos os seus descendentes terem sido também liberados. Segundo essa descrição, a operação de destruição de uma árvore deve ser implementada utilizando o percurso:
+\begin{choices}
+\wrongchoice{em ordem.}
+\wrongchoice{pré-ordem.}
+\wrongchoice{central.}
+\wrongchoice{simétrico.}
+\correctchoice{pós-ordem.}
+\end{choices}
+\end{question}
+}
+
+{
+\def\AMCbeginQuestion#1#2{\par\noindent{\bf (POSCOMP 2016 - Questão 25)}}
+\begin{question}{q2016-25} Em relação ao projeto de algoritmos, relacione a Coluna 1 à Coluna 2.\\
+\textbf{Coluna 1}\\
+1. Tentativa e Erro.\\
+2. Divisão e Conquista.\\
+3. Guloso.\\
+4. Aproximado.\\
+5. Heurística.\\
+\textbf{Coluna 2}\\
+( ) O algoritmo decompõe o processo em um número finito de subtarefas parciais que devem ser exploradas exaustivamente.\\
+( ) O algoritmo divide o problema a ser resolvido em partes menores, encontra soluções para as partes e então combina as soluções obtidas em uma solução global.\\
+( ) O algoritmo constrói por etapas uma solução ótima. Em cada passo, após selecionar um elemento da entrada (o melhor), decide se ele é viável (caso em que virá a fazer parte da solução) ou não. Após uma sequência de decisões, uma solução para o problema é alcançada.\\
+( ) O algoritmo gera soluções cujo resultado encontra-se dentro de um limite para a razão entre a solução ótima e a produzida pelo algoritmo.\\
+( ) O algoritmo pode produzir um bom resultado, ou até mesmo obter uma solução ótima, mas pode também não produzir solução nenhuma ou uma solução distante da solução ótima.\\
+A ordem correta de preenchimento dos parênteses, de cima para baixo, é:
+\begin{choices}
+\correctchoice{1 -- 2 -- 3 -- 4 -- 5.}
+\wrongchoice{2 -- 3 -- 4 -- 5 -- 1.}
+\wrongchoice{3 -- 4 -- 5 -- 1 -- 2.}
+\wrongchoice{4 -- 5 -- 1 -- 2 -- 3.}
+\wrongchoice{5 -- 1 -- 2 -- 3 -- 4.}
+\end{choices}
+\end{question}
+}
+
+{
+\def\AMCbeginQuestion#1#2{\par\noindent{\bf (POSCOMP 2016 - Questão 32)}}
+\begin{question}{q2016-32} A matriz de um grafo $G = (V,A)$ contendo $n$ vértices é uma matriz $n \times n$ de bits, em que $A[i,j]$ é 1 (ou verdadeiro, no caso de booleanos) se e somente se existir um arco do vértice $i$ para o vértice $j$. Essa definição é uma:
+\begin{choices}
+\correctchoice{Matriz de adjacência para grafos não ponderados.}
+\wrongchoice{Matriz de recorrência para grafos não ponderados.}
+\wrongchoice{Matriz de incidência para grafos não ponderados.}
+\wrongchoice{Matriz de adjacência para grafos ponderados.}
+\wrongchoice{Matriz de incidência para grafos ponderados.}
+\end{choices}
+\end{question}
+}
+
+{
+\def\AMCbeginQuestion#1#2{\par\noindent{\bf (POSCOMP 2017 - Questão 22)}}
+\begin{question}{q2017-22} A complexidade de tempo da questão 21 é:
+\begin{choices}
+\wrongchoice{$O(n^2)$}
+\wrongchoice{$O(n^4)$}
+\wrongchoice{$O(4n)$}
+\wrongchoice{$O(n \log n)$}
+\wrongchoice{$O(n)$}
+\end{choices}
+\end{question}
+}
+
+{
+\def\AMCbeginQuestion#1#2{\par\noindent{\bf (POSCOMP 2017 - Questão 23)}}
+\begin{question}{q2017-23} Considere o problema de somar os $n$ elementos de um mesmo arranjo $A$ de inteiros. O problema é resolvido da seguinte forma: (i) somam-se recursivamente os elementos da primeira metade de $A$; (ii) somam-se recursivamente os elementos da segunda metade de $A$; e (iii) soma-se esses dois valores juntos. Que tipo de recursão foi utilizada para a solução do problema?
+\begin{choices}
+\wrongchoice{Linear.}
+\correctchoice{Binária.}
+\wrongchoice{Ternária.}
+\wrongchoice{Final.}
+\wrongchoice{Múltipla.}
+\end{choices}
+\end{question}
+}
+
+{
+\def\AMCbeginQuestion#1#2{\par\noindent{\bf (POSCOMP 2017 - Questão 24)}}
+\begin{question}{q2017-24} Em relação às estruturas de dados do tipo lista, analise as assertivas abaixo, assinalando V, se verdadeiras, ou F, se falsas.\\
+( ) Uma implementação de fila por meio de arranjos é circular e delimitada pelos apontadores Frente e Trás. Para enfileirar um item, basta mover o apontador Trás uma posição no sentido horário; para desenfileirar um item, basta mover o apontador Frente no sentido horário.\\
+( ) Em uma lista duplamente encadeada, todas as inserções são realizadas em um extremo da lista, enquanto as exclusões e acessos são realizados no outro extremo da lista.\\
+( ) Filas são utilizadas quando se deseja processar itens de acordo com a ordem ``primeiro-que-chega, primeiro-atendido''.\\
+( ) Uma pilha é uma lista linear nas quais inserções, exclusões e acessos a itens ocorrem sempre em um dos extremos da lista.\\
+A ordem correta de preenchimento dos parênteses, de cima para baixo, é:
+\begin{choices}
+\wrongchoice{V -- F -- F -- V.}
+\correctchoice{V -- V -- F -- F.}
+\wrongchoice{V -- F -- V -- F.}
+\wrongchoice{F -- V -- F -- V.}
+\wrongchoice{F -- F -- V -- V.}
+\end{choices}
+\end{question}
+}
+
+{
+\def\AMCbeginQuestion#1#2{\par\noindent{\bf (POSCOMP 2017 - Questão 25)}}
+\begin{question}{q2017-25} A análise de algoritmos que estabelece um limite superior para o tempo de execução de qualquer entrada é denominada análise:
+\begin{choices}
+\wrongchoice{do melhor caso.}
+\wrongchoice{do caso médio.}
+\correctchoice{do pior caso.}
+\wrongchoice{da ordem de crescimento.}
+\wrongchoice{do tamanho da entrada.}
+\end{choices}
+\end{question}
+}
+
+{
+\def\AMCbeginQuestion#1#2{\par\noindent{\bf (POSCOMP 2017 - Questão 26)}}
+\begin{question}{q2017-26} O caminhamento pré-fixado à esquerda para uma Árvore Binária de Pesquisa (ABP) é 44, 30, 12, 26, 36, 33, 92, 64, 46, 98. O caminhamento pré-fixado à direita para a mesma árvore é:
+\begin{choices}
+\wrongchoice{26, 12, 33, 36, 30, 46, 64, 98, 92, 44}
+\correctchoice{44, 92, 98, 64, 46, 30, 36, 33, 12, 26}
+\wrongchoice{12, 26, 30, 33, 36, 44, 46, 64, 92, 98}
+\wrongchoice{98, 46, 64, 92, 33, 36, 26, 12, 30, 44}
+\wrongchoice{98, 92, 64, 46, 44, 36, 33, 30, 26, 12}
+\end{choices}
+\end{question}
+}
+
+{
+\def\AMCbeginQuestion#1#2{\par\noindent{\bf (POSCOMP 2017 - Questão 37)}}
+\begin{question}{q2017-37} O grafo da Figura (a) abaixo indica precedência entre atividades. Uma aresta direcionada $(u,v)$ indica que a atividade $u$ tem que ser realizada antes da atividade $v$. Por exemplo, a atividade 3 (representada pelo vértice 3) somente pode ser iniciada após o término das atividades 0 e 2, já a atividade 9 pode ser realizada em qualquer ordem. A Figura (b) acima mostra para o grafo da Figura (a):
+\begin{choices}
+\wrongchoice{os componentes fortemente conectados que representam as atividades mutualmente alcançáveis}
+\correctchoice{o caminhamento entre todas as atividades, usando o algoritmo de busca em largura.}
+\wrongchoice{a árvore geradora mínima que representa todas as possibilidades de conexão entre as atividades,}
+\wrongchoice{o caminhamento entre todas as atividades, usando o algoritmo de busca em profundidade.}
+\wrongchoice{a ordenação topológica que mostra a ordem em que as atividades devem ser processadas.}
+\end{choices}
+\end{question}
+}
+
+{
+\def\AMCbeginQuestion#1#2{\par\noindent{\bf (POSCOMP 2018 - Questão 33)}}
+\begin{question}{q2018-33} Quando um programa precisa classificar uma matriz de objetos de dados numéricos de algum tipo, normalmente usa um subprograma (ou função) para o processo de classificação. No ponto em que o processo de classificação é necessário, uma instrução como \texttt{sort\_int(list, list\_len)} é colocada no programa. Essa chamada é um exemplo de abstração de:
+\begin{choices}
+\wrongchoice{Dados.}
+\wrongchoice{Encapsulamento.}
+\wrongchoice{Repetição.}
+\wrongchoice{Condição.}
+\wrongchoice{Processo.}
+\end{choices}
+\end{question}
+}
+
+{
+\def\AMCbeginQuestion#1#2{\par\noindent{\bf (POSCOMP 2019 - Questão 25)}}
+\begin{question}{q2019-25} Considere a seguinte função em C:
+\begin{lstlisting}[language=C]
+void funcao(int n){
+  int i,j;
+  for (i=1; i<=n; i++)
+    for(j=1; j<log(i); j++)
+      printf("%d", i+j);
+}
+\end{lstlisting}
+A complexidade dessa função é:
+\begin{choices}
+\wrongchoice{$\Theta(n)$}
+\wrongchoice{$\Theta(n \log n)$}
+\wrongchoice{$\Theta(\log n)$}
+\wrongchoice{$\Theta(n^2)$}
+\wrongchoice{$\Theta(n^2 \log n)$}
+\end{choices}
+\end{question}
+}
+
+{
+\def\AMCbeginQuestion#1#2{\par\noindent{\bf (POSCOMP 2019 - Questão 26)}}
+\begin{question}{q2019-26} Sobre listas, analise as assertivas abaixo:\\
+I. Objetos podem ser inseridos em uma pilha a qualquer momento, mas apenas o que foi inserido mais recentemente (isto é, o último) pode ser removido a qualquer momento.\\
+II. Em uma fila, os elementos podem ser inseridos a qualquer momento, mas apenas o elemento que está a mais tempo na fila pode ser removido.\\
+III. Em uma fila, os elementos são inseridos e removidos de acordo com o princípio ``o último que entra é o primeiro que sai''.\\
+Quais estão corretas?
+\begin{choices}
+\wrongchoice{Apenas I.}
+\wrongchoice{Apenas II.}
+\wrongchoice{Apenas III.}
+\wrongchoice{Apenas I e II.}
+\wrongchoice{I, II e III.}
+\end{choices}
+\end{question}
+}
+
+{
+\def\AMCbeginQuestion#1#2{\par\noindent{\bf (POSCOMP 2019 - Questão 37)}}
+\begin{question}{q2019-37} Dado um grafo $G$ e um vértice de origem, qual é o algoritmo de busca que descobre todos os vértices a uma distância $K$ do vértice origem, antes de descobrir qualquer vértice a uma distância $K+1$?
+\begin{choices}
+\wrongchoice{Pré-ordem.}
+\wrongchoice{Largura.}
+\wrongchoice{Pós-ordem.}
+\wrongchoice{Profundidade.}
+\wrongchoice{Simétrica.}
+\end{choices}
+\end{question}
+}
+
+{
+\def\AMCbeginQuestion#1#2{\par\noindent{\bf (POSCOMP 2022 - Questão 21)}}
+\begin{question}{q2022-21} Os algoritmos de ordenação MergeSort, da árvore geradora mínima de Kruskal, e o algoritmo Floyd-Warshall que calcula o caminho mais curto entre todos os pares de vértices de um grafo orientado com peso são, respectivamente, exemplos de algoritmos:
+\begin{choices}
+\wrongchoice{Guloso, programação dinâmica e divisão e conquista.}
+\wrongchoice{Divisão e conquista, programação dinâmica e guloso.}
+\wrongchoice{Guloso, divisão e conquista e programação dinâmica.}
+\wrongchoice{Programação dinâmica, divisão e conquista e guloso.}
+\correctchoice{Divisão e conquista, guloso e programação dinâmica.}
+\end{choices}
+\end{question}
+}
+
+{
+\def\AMCbeginQuestion#1#2{\par\noindent{\bf (POSCOMP 2022 - Questão 22)}}
+\begin{question}{q2022-22} Considere as funções a seguir: $f_1(n) = O(n)$, $f_2(n) = O(n!)$, $f_3(n) = O(2^n)$, $f_4(n) = O(n^2)$. A ordem dessas funções, por ordem crescente de taxa de crescimento, é:
+\begin{choices}
+\wrongchoice{$f_2 - f_1 - f_3 - f_4$.}
+\wrongchoice{$f_3 - f_2 - f_4 - f_1$.}
+\correctchoice{$f_1 - f_4 - f_3 - f_2$.}
+\wrongchoice{$f_1 - f_4 - f_2 - f_3$.}
+\wrongchoice{$f_4 - f_3 - f_1 - f_2$.}
+\end{choices}
+\end{question}
+}
+
+{
+\def\AMCbeginQuestion#1#2{\par\noindent{\bf (POSCOMP 2022 - Questão 23)}}
+\begin{question}{q2022-23} Em relação à lista linear em alocação sequencial, é correto afirmar que:
+\begin{choices}
+\wrongchoice{Para as estruturas do tipo pilha, são necessários dois ponteiros, início da pilha (i) e fim da pilha (f).}
+\wrongchoice{O armazenamento sequencial de listas é empregado quando as estruturas, ao longo do tempo,}
+\correctchoice{Os nodos de uma lista simplesmente encadeada encontram-se aleatoriamente dispostos na}
+\wrongchoice{Em uma lista sequencial, o último nodo da lista aponta para o primeiro nodo da lista.}
+\wrongchoice{Para as estruturas do tipo fila, apenas um ponteiro precisa ser considerado, o ponteiro topo, pois}
+\end{choices}
+\end{question}
+}
+
+{
+\def\AMCbeginQuestion#1#2{\par\noindent{\bf (POSCOMP 2022 - Questão 26)}}
+\begin{question}{q2022-26} Qual é o método de compressão de texto cujo princípio é atribuir códigos mais curtos a símbolos com frequências altas, no qual um código único é atribuído a cada símbolo diferente do texto?
+\begin{choices}
+\correctchoice{Huffman.}
+\wrongchoice{Tabela hash.}
+\wrongchoice{Índice.}
+\wrongchoice{Lempel-Ziv-Welch.}
+\wrongchoice{Aproximação de entropia.}
+\end{choices}
+\end{question}
+}
+
+{
+\def\AMCbeginQuestion#1#2{\par\noindent{\bf (POSCOMP 2022 - Questão 36)}}
+\begin{question}{q2022-36} Qual é a implementação no qual um grafo $G = (V,A)$ contendo $n$ vértices é uma matriz $n \times n$ de bits, em que $A[i,j]$ é 1 (ou verdadeiro, no caso de booleanos) se e somente se existe um arco do vértice $i$ para o vértice $j$.
+\begin{choices}
+\wrongchoice{Matriz de incidência.}
+\wrongchoice{Lista de adjacência.}
+\correctchoice{Matriz de adjacência.}
+\wrongchoice{Lista de incidência.}
+\wrongchoice{Matriz quadrada completa.}
+\end{choices}
+\end{question}
+}
+
+{
+\def\AMCbeginQuestion#1#2{\par\noindent{\bf (POSCOMP 2023 - Questão 26)}}
+\begin{question}{q2023-26} A ordenação \underline{\hspace{3cm}} determina, para cada elemento de entrada $x$, o número de elementos menores que $x$ e usa essa informação para inserir o elemento $x$ diretamente em sua posição no arranjo de saída. Por exemplo, se 17 elementos forem menores que $x$, então $x$ pertence à posição de saída 18. Assinale a alternativa que preenche corretamente a lacuna do trecho acima.
+\begin{choices}
+\correctchoice{por contagem}
+\wrongchoice{mergesort}
+\wrongchoice{quicksort}
+\wrongchoice{por fila de prioridade}
+\wrongchoice{por intercalação com sentinela}
+\end{choices}
+\end{question}
+}
+
+{
+\def\AMCbeginQuestion#1#2{\par\noindent{\bf (POSCOMP 2023 - Questão 28)}}
+\begin{question}{q2023-28} Qual é o resultado da seguinte fórmula Infixa $A+B*(C-D*(E-F)-G*H)-I*3$ convertida para a notação polonesa?
+\begin{choices}
+\wrongchoice{A+*(B*(C-(D*(E-(F-G*H-I*3)))))}
+\wrongchoice{A+B*C-D*E-F-G*H-I*3+*-*-*-*+}
+\wrongchoice{+*-*--*A -*ABCDEFGHI3}
+\correctchoice{ABCDEF-*-GH*-*+I3*E) ABCDEFGHI3+*-*-*-*-}
+\wrongchoice{Nenhuma das alternativas anteriores}
+\end{choices}
+\end{question}
+}
+
+{
+\def\AMCbeginQuestion#1#2{\par\noindent{\bf (POSCOMP 2024 - Questão 21)}}
+\begin{question}{q2024-21} Considere o problema de acessar os registros de um arquivo. Cada registro contém uma chave única que é utilizada para recuperar os registros do arquivo. Dada uma chave qualquer, o problema consiste em localizar o registro que contenha essa chave. O algoritmo examina os registros na ordem em que eles aparecem no arquivo, até que o registro procurado seja encontrado ou fique determinado que ele não se encontra no arquivo. Seja $f$ uma função de complexidade tal que $f(n)$ é o número de registros consultado no arquivo, é correto afirmar que:
+\begin{choices}
+\correctchoice{O caso médio é $f(n) = (n + 1)/2$}
+\wrongchoice{O melhor caso é $f(n) = n - 1$}
+\wrongchoice{O caso ótimo é $f(n) = 3n/2 - 3/2$}
+\wrongchoice{O caso recorrente é $f(n) = 2(n - 1)$}
+\wrongchoice{O pior caso é $f(n) = 1$}
+\end{choices}
+\end{question}
+}
+
+{
+\def\AMCbeginQuestion#1#2{\par\noindent{\bf (POSCOMP 2025 - Questão 16)}}
+\begin{question}{q2025-16} Considere a definição recursiva da função $f(n)$ abaixo:
+\[
+f(n) = \begin{cases}
+1,  n = 0 \\
+n \cdot f(n - 1),  n > 0
+\end{cases}
+\]
+Qual é o valor de $f(4)$?
+\begin{choices}
+\wrongchoice{12.}
+\wrongchoice{16.}
+\wrongchoice{20.}
+\correctchoice{24.}
+\wrongchoice{32.}
+\end{choices}
+\end{question}
+}
+
+{
+\def\AMCbeginQuestion#1#2{\par\noindent{\bf (POSCOMP 2025 - Questão 50)}}
+\begin{question}{q2025-50} Dado um grafo $G(V,A)$ direcionado ou não direcionado, qual é o algoritmo de busca em grafos que descobre todos os vértices a uma distância $k$ do vértice origem antes de descobrir qualquer vértice a uma distância $K + 1$?
+\begin{choices}
+\wrongchoice{Busca Binária.}
+\wrongchoice{Busca Sequencial.}
+\correctchoice{Busca em Largura.}
+\wrongchoice{Caminhamento pós-fixado.}
+\wrongchoice{Busca em Profundidade.}
+\end{choices}
+\end{question}
+}
+
+\end{document}  

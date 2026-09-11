@@ -1,0 +1,43 @@
+(Atividade \emph{Warmup C++}) Elabore um programa em C++ que receba uma sequência de valores inteiros. A sequência termina com a entrada -1. Em seguida, o programa recebe um valor $k$.
+
+A saída do programa deve ser os $k$ menores elementos da sequência ordenados. É fortemente recomendado que se utilize os recursos da biblioteca padrão do C++ \emph{Standard Template Library} (STL) (ex. \texttt{vector}, \texttt{pair}, etc.). Observação: uma solução trivial resolve o problema em $O(nk)$ e a solução utilizando uma estrutura de dados adequada resolve em $O(klogn)$.
+
+\inout
+
+\begin{table}[!htb]
+	\centering
+	\begin{minipage}[t]{0.32\textwidth} % Primeira tabela (ajuste para 1/3 da largura)
+		\centering
+		\vspace{0pt}
+		\begin{tabular}{cc}
+			\hline
+			Entrada     & Saída \\ \hline
+			3 4 5 1 -1    & 1 3    \\ 
+			2        &          \\
+			\hline
+		\end{tabular}
+	\end{minipage}%
+	\hfill
+	\begin{minipage}[t]{0.32\textwidth} % Segunda tabela
+		\centering
+		\vspace{0pt}
+		\begin{tabular}{cc}
+			\hline
+			Entrada     & Saída \\ \hline
+			8 2 5 4 15 4 4 -1    & 2 4 4 4    \\ 
+			4        &          \\
+			\hline
+		\end{tabular}
+	\end{minipage}%
+	\hfill
+	\begin{minipage}[t]{0.32\textwidth} % Terceira tabela
+		\centering
+		\vspace{0pt}
+		\begin{tabular}{cc}
+			\hline
+			Entrada    & Saída \\ \hline
+			1 2 3 4 5 -1        &    1 2 3   \\
+			3        &       \\ \hline
+		\end{tabular}
+	\end{minipage}
+\end{table}
