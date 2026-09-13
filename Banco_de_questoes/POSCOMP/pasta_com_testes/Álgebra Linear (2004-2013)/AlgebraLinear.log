@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.8.25)  12 SEP 2026 18:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.8.25)  12 SEP 2026 18:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/nicolas/Eu/IC/Banco_de_questoes/POSCOMP/pasta_com_testes/Sistemas_Operacionais(04-07)/test.tex
-(/home/nicolas/Eu/IC/Banco_de_questoes/POSCOMP/pasta_com_testes/Sistemas_Operacionais(04-07)/test.tex
+**"/home/nicolas/Eu/IC/Banco_de_questoes/POSCOMP/pasta_com_testes/Álgebra Linear (2004-2013)/AlgebraLinear.tex"
+(/home/nicolas/Eu/IC/Banco_de_questoes/POSCOMP/pasta_com_testes/Álgebra Linear (2004-2013)/AlgebraLinear.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -241,7 +241,7 @@ Style option: `fancybox' v1.4 <2010/05/15> (tvz)
 \Verbatim@Infile=\read3
 )
 \AMC@logfile=\write4
-\openout4 = `test.amc'.
+\openout4 = `AlgebraLinear.amc'.
 
 \AMCload@counter=\count288
 \AMCid@quest=\count289
@@ -543,8 +543,8 @@ Package etex Warning: Extended allocation already in use.
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count329
 \l__pdf_internal_box=\box103
-) (./test.aux)
-\openout1 = `test.aux'.
+) (./AlgebraLinear.aux)
+\openout1 = `AlgebraLinear.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
@@ -620,102 +620,40 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 \AMC@ovalbox@=\box107
 \AMC@ovalbox@F=\box108
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 29.
+(Font)              <7> on input line 21.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 29.
+(Font)              <5> on input line 21.
+<poscomp_2012_q05_figura.png, id=1, 291.0875pt x 281.05pt>
+File: poscomp_2012_q05_figura.png Graphic file (type png)
+<use poscomp_2012_q05_figura.png>
+Package pdftex.def Info: poscomp_2012_q05_figura.png  used on input line 421.
+(pdftex.def)             Requested size: 115.23547pt x 111.26012pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--31
-
- []
-
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2023/02/27 1.9 listings language file
-) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-)
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <9> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 40.
-
-Underfull \hbox (badness 10000) in paragraph at lines 34--68
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--90
+Underfull \hbox (badness 10000) in paragraph at lines 21--543
 
  []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 93--104
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 107--122
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 125--136
-
- []
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 140--158
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 162--178
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 182--206
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 209--228
-
- []
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 231--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 255--277
-
- []
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 280--301
-
- []
-
-[5] (./test.aux)
+] [2] [3] [4] [5] [6] [7] [8 <./poscomp_2012_q05_figura.png (PNG copy)>] [9] [10] (./AlgebraLinear.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 7501 strings out of 474222
- 118033 string characters out of 5748733
- 2009975 words of memory out of 5000000
- 29690 multiletter control sequences out of 15000+600000
- 559656 words of font info for 42 fonts, out of 8000000 for 9000
+ 7135 strings out of 474222
+ 114888 string characters out of 5748733
+ 2084975 words of memory out of 5000000
+ 29330 multiletter control sequences out of 15000+600000
+ 559463 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,23n,93p,501b,1356s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb>
-Output written on test.pdf (5 pages, 101156 bytes).
+ 87i,23n,93p,524b,499s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb>
+Output written on AlgebraLinear.pdf (10 pages, 179933 bytes).
 PDF statistics:
- 55 PDF objects out of 1000 (max. 8388607)
- 33 compressed objects within 1 object stream
+ 93 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
