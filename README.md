@@ -11,7 +11,7 @@ Repositório de materiais, ferramentas e experimentos desenvolvidos durante ativ
 | [`HTML`](./HTML) | Avaliadores e protótipos desenvolvidos em HTML e LaTeX. |
 | [`PYTHON`](./PYTHON) | Ferramentas Python para processar questões e avaliar respostas de modelos de linguagem. |
 
-## Avaliação de questões com IA
+## Avaliação de questões com LLM
 
 O diretório [`PYTHON`](./PYTHON) contém uma ferramenta que:
 
